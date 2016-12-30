@@ -1,0 +1,54 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SmallInvestment.PhoneWeb.Views.CarLoan"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:SmallInvestment.PhoneWeb.UserControls.CarLoanControls"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  
+    Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--枢轴控件-->
+        <phone:Pivot x:Name="PivotLayout" Foreground="Black" SelectionChanged="PivotLayout_SelectionChanged">
+            <!--枢轴项一-->
+            <phone:PivotItem x:Name="PivotItemComputer" Foreground="Black">
+                <phone:PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="车贷计算"  FontWeight="Medium" Foreground="Black"  FontSize="40"  />
+                    </Grid>
+                </phone:PivotItem.Header>
+                
+                <Grid>
+                    <my:carLoanUc x:Name="carLoanUc" Visibility="Visible" Height="300" Background="{StaticResource TransparentBrush}" Margin="0,10,0,322"/>
+
+
+                    <TextBlock x:Name="tBlockTip"  FontSize="24"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="10,355,0,0"/>
+                </Grid>
+            </phone:PivotItem>
+
+            <!--枢轴项二-->
+            <phone:PivotItem x:Name="PivotItemDetail" Foreground="Black">
+                <phone:PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="车贷明细"  FontWeight="Medium" Foreground="Black"  FontSize="40"   />
+                    </Grid>
+                </phone:PivotItem.Header>
+                
+                <Grid>
+                    <my:carLoanDetail x:Name="carLoanDetail" Visibility="Visible" Background="{StaticResource TransparentBrush}" />
+                    <!--<my:carTaxDetail x:Name="carTaxDetail" Visibility="Visible" Background="{StaticResource TransparentBrush}" />-->
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,14 @@
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\Bin\Debug\SmallInvestment.Dal.dll
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\Bin\Debug\SmallInvestment.Dal.pdb
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\Bin\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\Bin\Debug\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\obj\Debug\SmallInvestment.Dal.csprojResolveAssemblyReference.cache
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\obj\Debug\SmallInvestment.Dal.dll
+G:\WphoneExample\PhoneApp\JerryAndTom.Dal\obj\Debug\SmallInvestment.Dal.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\Bin\Debug\SmallInvestment.Dal.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\Bin\Debug\SmallInvestment.Dal.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\Bin\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\Bin\Debug\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\obj\Debug\SmallInvestment.Dal.csprojResolveAssemblyReference.cache
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\obj\Debug\SmallInvestment.Dal.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\obj\Debug\SmallInvestment.Dal.pdb

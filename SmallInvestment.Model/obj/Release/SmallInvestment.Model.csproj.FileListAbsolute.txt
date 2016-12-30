@@ -1,0 +1,4 @@
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\Bin\Release\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\Bin\Release\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\obj\Release\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\obj\Release\SmallInvestment.Model.pdb

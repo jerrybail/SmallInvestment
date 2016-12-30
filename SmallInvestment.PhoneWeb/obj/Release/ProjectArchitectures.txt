@@ -1,0 +1,9 @@
+G:\WphoneExample\PhoneApp\SmallInvestment.Bll\SmallInvestment.Bll.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\SmallInvestment.Common.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\SmallInvestment.Common.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\SmallInvestment.Dal.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Dal\SmallInvestment.Dal.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\SmallInvestment.Model.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\SmallInvestment.Model.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\SmallInvestment.Model.csproj;neutral
+G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\SmallInvestment.PhoneWeb.csproj;neutral

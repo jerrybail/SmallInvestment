@@ -1,0 +1,12 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SmallInvestment.PhoneWeb" EntryPointType="SmallInvestment.PhoneWeb.App" RuntimeVersion="6.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SmallInvestment.PhoneWeb" Source="SmallInvestment.PhoneWeb.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Controls" Source="Coding4Fun.Toolkit.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="SmallInvestment.Bll" Source="SmallInvestment.Bll.dll" />
+    <AssemblyPart x:Name="SmallInvestment.Common" Source="SmallInvestment.Common.dll" />
+    <AssemblyPart x:Name="SmallInvestment.Model" Source="SmallInvestment.Model.dll" />
+    <AssemblyPart x:Name="SmallInvestment.Dal" Source="SmallInvestment.Dal.dll" />
+  </Deployment.Parts>
+</Deployment>

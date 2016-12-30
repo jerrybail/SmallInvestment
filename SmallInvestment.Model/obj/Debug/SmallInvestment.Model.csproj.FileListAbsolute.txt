@@ -1,0 +1,8 @@
+G:\WphoneExample\PhoneApp\JerryAndTom.Model\Bin\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\JerryAndTom.Model\Bin\Debug\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\JerryAndTom.Model\obj\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\JerryAndTom.Model\obj\Debug\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\Bin\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\obj\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\obj\Debug\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Model\Bin\Debug\SmallInvestment.Model.pdb

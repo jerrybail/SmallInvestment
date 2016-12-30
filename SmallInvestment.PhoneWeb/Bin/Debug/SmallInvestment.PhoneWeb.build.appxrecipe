@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JERRY</Machine>
+    <WindowsUser>AndTom</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ba9ab79e-02f1-4737-97f3-c8035df8e013</PackageIdentityName>
+    <IntermediateOutputPath>G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Bin\Debug\SmallInvestment.PhoneWeb.dll">
+      <PackagePath>SmallInvestment.PhoneWeb.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.Bll\Bin\Debug\SmallInvestment.Bll.dll">
+      <PackagePath>SmallInvestment.Bll.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Common.dll">
+      <PackagePath>SmallInvestment.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.Dal\Bin\Debug\SmallInvestment.Dal.dll">
+      <PackagePath>SmallInvestment.Dal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.Model\Bin\Debug\SmallInvestment.Model.dll">
+      <PackagePath>SmallInvestment.Model.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll">
+      <PackagePath>Coding4Fun.Toolkit.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.dll">
+      <PackagePath>Microsoft.Phone.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll">
+      <PackagePath>Microsoft.Phone.Controls.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\back.png">
+      <PackagePath>Assets\AppBarImages\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\delete.png">
+      <PackagePath>Assets\AppBarImages\delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\edit.png">
+      <PackagePath>Assets\AppBarImages\edit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\favs.png">
+      <PackagePath>Assets\AppBarImages\favs.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\like.png">
+      <PackagePath>Assets\AppBarImages\like.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\questionmark.png">
+      <PackagePath>Assets\AppBarImages\questionmark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\refresh.png">
+      <PackagePath>Assets\AppBarImages\refresh.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\save.png">
+      <PackagePath>Assets\AppBarImages\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\bankImg.png">
+      <PackagePath>Assets\Tiles\bankImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\bankImgSmall.png">
+      <PackagePath>Assets\Tiles\bankImgSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\bgImage.png">
+      <PackagePath>Assets\Tiles\bgImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\carloanImg.png">
+      <PackagePath>Assets\Tiles\carloanImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\check.png">
+      <PackagePath>Assets\AppBarImages\check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\close.png">
+      <PackagePath>Assets\AppBarImages\close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\carSmall.png">
+      <PackagePath>Assets\Tiles\carSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\delete.png">
+      <PackagePath>Assets\Tiles\delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\feedbackImg.png">
+      <PackagePath>Assets\Tiles\feedbackImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\houseloanImg.png">
+      <PackagePath>Assets\Tiles\houseloanImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\houseloanImgSmall.png">
+      <PackagePath>Assets\Tiles\houseloanImgSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\housetip.png">
+      <PackagePath>Assets\Tiles\housetip.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\profitImg.png">
+      <PackagePath>Assets\Tiles\profitImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\starImg.png">
+      <PackagePath>Assets\Tiles\starImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\wageImg.png">
+      <PackagePath>Assets\Tiles\wageImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\wageImgSmall.png">
+      <PackagePath>Assets\Tiles\wageImgSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Toolkit.Content\ApplicationBar.Add.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Toolkit.Content\ApplicationBar.Cancel.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Toolkit.Content\ApplicationBar.Check.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Toolkit.Content\ApplicationBar.Delete.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Toolkit.Content\ApplicationBar.Select.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Assets\AppBarImages\user.jpg">
+      <PackagePath>Assets\AppBarImages\user.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\ServiceReferences.ClientConfig">
+      <PackagePath>ServiceReferences.ClientConfig</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\README_FIRST.txt">
+      <PackagePath>README_FIRST.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\WphoneExample\PhoneApp\SmallInvestment.PhoneWeb\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

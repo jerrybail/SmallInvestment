@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetBankList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBankListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBankListResult" type="tns:ArrayOfBankEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBankEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BankEntity" nillable="true" type="tns:BankEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BankEntity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BankID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankGroup" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentRadio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radio3m" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radio6m" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radio1y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radio2y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radio3y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radio5y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Disperse_1yRadio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Disperse_3yRadio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Disperse_5yRadio" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MetroColor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLoanRateList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoanRateListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoanRateListResult" type="tns:ArrayOfLoanRateEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLoanRateEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LoanRateEntity" nillable="true" type="tns:LoanRateEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LoanRateEntity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanRate" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoanRateName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanRate6M" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanRate1Y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanRate1To3Y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanRate3To5Y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoanRate5YAbove" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HouseFundLoan5Y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HouseFundLoan5YAbove" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="State" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Flag" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderFlag" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetWageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWageListResult" type="tns:ArrayOfWageEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWageEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WageEntity" nillable="true" type="tns:WageEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WageEntity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityGroup" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HousingFundRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="HousingFundCompayRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="MedicareFundRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="MedicareFundCompanyRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnemploymentFundRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnemploymentFundCompanyRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndowmentFundRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndowmentFundCompanyRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="InjuryFundRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="InjuryFundCompanyRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthFundRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthFundCompanyRadio" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxWage" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinWage" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="MetroColor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGuideList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuideListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGuideListResult" type="tns:ArrayOfGuide" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGuide">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Guide" nillable="true" type="tns:Guide" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Guide">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImageUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContentUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBankListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBankList" />
+  </wsdl:message>
+  <wsdl:message name="GetBankListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBankListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanRateListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoanRateList" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanRateListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoanRateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWageListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWageList" />
+  </wsdl:message>
+  <wsdl:message name="GetWageListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGuideListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGuideList" />
+  </wsdl:message>
+  <wsdl:message name="GetGuideListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGuideListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SmallInWbsSoap">
+    <wsdl:operation name="GetBankList">
+      <wsdl:input message="tns:GetBankListSoapIn" />
+      <wsdl:output message="tns:GetBankListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanRateList">
+      <wsdl:input message="tns:GetLoanRateListSoapIn" />
+      <wsdl:output message="tns:GetLoanRateListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWageList">
+      <wsdl:input message="tns:GetWageListSoapIn" />
+      <wsdl:output message="tns:GetWageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGuideList">
+      <wsdl:input message="tns:GetGuideListSoapIn" />
+      <wsdl:output message="tns:GetGuideListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SmallInWbsSoap" type="tns:SmallInWbsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBankList">
+      <soap:operation soapAction="http://tempuri.org/GetBankList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanRateList">
+      <soap:operation soapAction="http://tempuri.org/GetLoanRateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWageList">
+      <soap:operation soapAction="http://tempuri.org/GetWageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuideList">
+      <soap:operation soapAction="http://tempuri.org/GetGuideList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SmallInWbsSoap12" type="tns:SmallInWbsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBankList">
+      <soap12:operation soapAction="http://tempuri.org/GetBankList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanRateList">
+      <soap12:operation soapAction="http://tempuri.org/GetLoanRateList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWageList">
+      <soap12:operation soapAction="http://tempuri.org/GetWageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuideList">
+      <soap12:operation soapAction="http://tempuri.org/GetGuideList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SmallInWbs">
+    <wsdl:port name="SmallInWbsSoap" binding="tns:SmallInWbsSoap">
+      <soap:address location="http://bailing.equla.com/SmallInWbs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SmallInWbsSoap12" binding="tns:SmallInWbsSoap12">
+      <soap12:address location="http://bailing.equla.com/SmallInWbs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

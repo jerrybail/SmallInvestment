@@ -1,0 +1,51 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SmallInvestment.PhoneWeb.Views.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0"  Margin="10,10,0,0">
+            <TextBlock Text="关于"   FontWeight="Medium" Foreground="Black"  FontSize="40"/>
+        </StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"  Text="版本：V1.3.2014 For Windows Phone 8" Margin="12,163,0,0" />
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="作者：百   灵  (QQ：308429592)" Margin="12,43,0,0" />
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="设计：Tom侯" Margin="12,123,0,0" />
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="" Margin="12,172,0,0" />
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="说明：" Margin="10,205,0,0" />
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="感谢大家对小投资的支持，再使用过程中遇到问题请通过反馈功能反馈，我会及时改正。谢谢大家提出功能优化和扩展方面的意见，我会努力把小投资做好。" Margin="70,205,0,0" Width="323" Height="153" ></TextBlock>
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" Margin="12,363,0,0" TextWrapping="Wrap" Text="友情链接：" VerticalAlignment="Top"/>
+            <HyperlinkButton Foreground="#2B4C66" Content="微疯客"  HorizontalAlignment="Left" Margin="101,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.435,-1.355" Click="HyperlinkButton_Click"/>
+            <TextBlock Foreground="Black"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="邮箱：mbailing@163.com" Margin="12,83,0,0" />
+            
+            <!--<Button  HorizontalAlignment="Left" Padding="0 0 0 0 " BorderThickness="0 0 0 0"  Margin="101,476,0,0" VerticalAlignment="Top" Width="270">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Width="70" Height="70" Source="/Assets/Tiles/bankImgSmall.png"/>
+                                <TextBlock Foreground="#2B4C66" FontSize="30" Margin="20" Text="利息计算"></TextBlock>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>-->
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,4 @@
+F:\WphoneExample\PhoneApp1\JerryAndTom.Model\Bin\Release\JerryAndTom.Model.dll
+F:\WphoneExample\PhoneApp1\JerryAndTom.Model\Bin\Release\JerryAndTom.Model.pdb
+F:\WphoneExample\PhoneApp1\JerryAndTom.Model\obj\Release\JerryAndTom.Model.dll
+F:\WphoneExample\PhoneApp1\JerryAndTom.Model\obj\Release\JerryAndTom.Model.pdb

@@ -1,0 +1,130 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SmallInvestment.PhoneWeb.Views.HouseLoan"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"   
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+    xmlns:my="clr-namespace:SmallInvestment.PhoneWeb.UserControls.HouseLoanControls"  
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  
+    Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="WageTaxItem">
+            <Border Margin="0 0 0 0">
+                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock Text="{Binding MonthTime }" Width="80"   FontSize="21" />
+                    <TextBlock Text="{Binding MonthPayBjStr}" TextAlignment="Left" Width="120"    FontSize="21"/>
+                    <TextBlock Text="{Binding MonthPayLxStr}" TextAlignment="Left" Width="120"  FontSize="21"/>
+                    <TextBlock Text="{Binding MonthPayYgStr}" TextAlignment="Left" Width="120"  FontSize="21"/>
+                </StackPanel>
+            </Border>
+
+        </DataTemplate>
+
+        <phone:JumpListItemBackgroundConverter x:Key="BackgroundConverter" Enabled="#FF008AFF"/>
+        <phone:JumpListItemForegroundConverter x:Key="ForegroundConverter" Enabled="White"/>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--枢轴控件-->
+        <phone:Pivot x:Name="PivotLayout" Foreground="Black" SelectionChanged="PivotLayout_SelectionChanged">  
+            <!--枢轴项一-->
+            <phone:PivotItem x:Name="PivotItemComputer" Foreground="Black">
+                <phone:PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="房贷计算"  FontWeight="Medium" Foreground="Black"  FontSize="40" />
+                    </Grid>
+                </phone:PivotItem.Header>
+
+                <Grid>
+                    <TextBlock Text="贷款类别："  Foreground="Black" FontSize="20" HorizontalAlignment="Left" TextAlignment="Right" VerticalAlignment="Center" Margin="10,15,0,551"  />
+                    <RadioButton x:Name="radBusinessLoan" Background="#42AAFF" BorderBrush="Black" Foreground="Black" Content="商贷" GroupName="LoanType"  HorizontalAlignment="Left"  Margin="105,26,0,561" IsChecked="True" Checked="RadioButton_Checked"/>
+                    <RadioButton x:Name="radGroupLoad"  Background="#42AAFF" BorderBrush="Black" Foreground="Black" Content="组合" GroupName="LoanType" HorizontalAlignment="Left"  Margin="332,26,0,561"  Checked="RadioButton_Checked"/>
+                    <RadioButton x:Name="radFundLoad"  Background="#42AAFF" BorderBrush="Black" Foreground="Black" Content="公积金" GroupName="LoanType" HorizontalAlignment="Left"  Margin="206,26,0,561"  Checked="RadioButton_Checked"/>
+
+
+
+
+                    <my:houseBusinessUc x:Name="houseBusinessUc" Height="300"  Visibility="Visible"  Margin="0,30,0,213"  Canvas.ZIndex="100" Background="{StaticResource TransparentBrush}"/>
+
+                    <my:houseFundUc x:Name="houseFundUc"  Height="300" Visibility="Collapsed" Margin="0,30,0,213" Canvas.ZIndex="100"  Background="{StaticResource TransparentBrush}"/>
+
+                    <my:houseGroupUc x:Name="houseGroupUc" Height="360" Visibility="Collapsed" Margin="0,30,0,148" Canvas.ZIndex="1000"  Background="{StaticResource TransparentBrush}"/>
+                    
+
+                    <TextBlock x:Name="txtHouseLoanTip" FontSize="24"  Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"  TextWrapping="Wrap" Text="" Margin="10,470,0,0"/>
+                    
+
+                </Grid>
+            </phone:PivotItem>
+
+
+            <!--枢轴项二-->
+            <phone:PivotItem x:Name="PrivotHouseLoanDebx"  Foreground="Black" Visibility="Collapsed">
+                <phone:PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="等额本息"  FontWeight="Medium" Foreground="Black"  FontSize="40"  />
+                    </Grid>
+                </phone:PivotItem.Header>
+                
+                <Grid>
+                    
+                    <my:houseLoanDebx x:Name="houseLoanDebx" Visibility="Collapsed" Background="{StaticResource TransparentBrush}"/>
+
+                    <my:houseLoanGroupDebx x:Name="houseLoanGroupDebx" Visibility="Collapsed" Background="{StaticResource TransparentBrush}"/>
+                    
+                    <!--<my:houseLoanByBFDetail x:Name="houseLoanByBFDetail" Visibility="Collapsed" Background="{StaticResource TransparentBrush}"/>
+                    <my:houseLoanByGroup x:Name="houseLoanByGroup" Visibility="Collapsed" Background="{StaticResource TransparentBrush}"/>-->
+                </Grid>
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="PrivotHouseLoanDebj"  Foreground="Black">
+                <phone:PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="等额本金"  FontWeight="Medium" Foreground="Black"  FontSize="40"  />
+                    </Grid>
+                </phone:PivotItem.Header>
+                
+                <Grid>
+                    <my:houseLoanDebj x:Name="houseLoanDebj" Visibility="Collapsed" Background="{StaticResource TransparentBrush}"/>
+                    <my:houseLoanGroupDebj x:Name="houseLoanGroupDebj" Visibility="Collapsed" Background="{StaticResource TransparentBrush}"/>
+                </Grid>
+            </phone:PivotItem>
+            
+            
+            <!--枢轴项四-->
+            <phone:PivotItem x:Name="PivotItemDetail"  Foreground="Black">
+                <phone:PivotItem.Header>
+                    <Grid>
+                        <TextBlock Text="名词解释"  FontWeight="Medium" Foreground="Black"  FontSize="40"  />
+                    </Grid>
+                </phone:PivotItem.Header>
+                
+                <Grid>
+                    <ListBox x:Name="listIntroduction" Margin="10,0,0,68">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical" Margin="0 0 0 25">
+                                    <TextBlock Foreground="Black" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="24"  VerticalAlignment="Top"  Text="{Binding Name}" FontWeight="Bold"/>
+                                    <TextBlock Foreground="Black" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="21"  VerticalAlignment="Top"  Text="{Binding Desc}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                </Grid>
+            </phone:PivotItem>
+
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

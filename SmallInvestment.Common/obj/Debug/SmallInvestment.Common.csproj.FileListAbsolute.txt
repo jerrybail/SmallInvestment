@@ -1,0 +1,11 @@
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Common.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\obj\Debug\SmallInvestment.Common.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\obj\Debug\SmallInvestment.Common.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Common.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\Microsoft.Phone.Controls.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Dal.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Model.dll
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Dal.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\Bin\Debug\SmallInvestment.Model.pdb
+G:\WphoneExample\PhoneApp\SmallInvestment.Common\obj\Debug\SmallInvestment.Common.csprojResolveAssemblyReference.cache

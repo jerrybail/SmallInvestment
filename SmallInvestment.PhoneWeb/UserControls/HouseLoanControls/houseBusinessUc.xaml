@@ -1,0 +1,116 @@
+﻿<UserControl
+    x:Class="SmallInvestment.PhoneWeb.UserControls.HouseLoanControls.houseBusinessUc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="300" 
+    d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource TransparentBrush}">
+
+        <TextBlock HorizontalAlignment="Left" Foreground="Black" TextWrapping="Wrap" Text="贷款金额：" VerticalAlignment="Top" Margin="10,21,0,0"/>
+        <TextBox x:Name="txtLoanAmount"  Foreground="Black" BorderBrush="Black" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="" VerticalAlignment="Top"   InputScope="Number" Width="180" Margin="110,1,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="Black" TextWrapping="Wrap" Text="万元" VerticalAlignment="Top" Margin="280,21,0,0"/>
+
+
+        <TextBlock Text="贷款期限：" Foreground="Black" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,88,0,171" Height="41" />
+        <toolkit:ListPicker x:Name="LPLoanTerm" 
+			FontSize="20" Width="160"  
+			Margin="121,69,0,161" 
+            Background="#F2F2F2"
+            BorderBrush="Black"
+			HorizontalContentAlignment="Right" 
+			HorizontalAlignment="Left" 
+			VerticalAlignment="Center" Height="70"  >
+            <toolkit:ListPicker.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <TextBlock TextAlignment="Left" Foreground="Black" Tag="{Binding Term}" Text="{Binding TermName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </toolkit:ListPicker.ItemTemplate>
+
+            <toolkit:ListPicker.FullModeItemTemplate>
+                <DataTemplate>
+                    <TextBlock Tag="{Binding Term}" Foreground="White" Text="{Binding TermName}" Margin="16 0 0 0" FontSize="43"/>
+                </DataTemplate>
+            </toolkit:ListPicker.FullModeItemTemplate>
+        </toolkit:ListPicker>
+
+
+
+
+        <TextBlock Text="贷款利率：" Foreground="Black" FontSize="20" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="10,155,0,116" Height="29" />
+        <toolkit:ListPicker x:Name="LPLoanBusinessRate" 
+                            Foreground="Black" 
+                            BorderBrush="Black"
+                            FontSize="20" 
+                            Width="160"
+                            Margin="121,137,0,-95" 
+                            VerticalAlignment="Center"  
+                            HorizontalContentAlignment="Right" 
+                            HorizontalAlignment="Left" 
+                            Height="258" 
+                            Canvas.ZIndex="1000" 
+                            SelectionChanged="LPLoanBusinessRate_SelectionChanged"  >
+            <toolkit:ListPicker.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <TextBlock TextAlignment="Left" Foreground="Black" Tag="{Binding LoanRateBase}" Text="{Binding LoanRateBaseName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </toolkit:ListPicker.ItemTemplate>
+
+            <toolkit:ListPicker.FullModeItemTemplate>
+                <DataTemplate>
+                    <TextBlock TextAlignment="Left" Foreground="Black" Tag="{Binding LoanRateBase}" Text="{Binding LoanRateBaseName}" Margin="16 0 0 0" FontSize="43"/>
+                </DataTemplate>
+            </toolkit:ListPicker.FullModeItemTemplate>
+        </toolkit:ListPicker>
+
+
+
+        <toolkit:ListPicker x:Name="LPLoanDiscount" 
+                            Foreground="Black" 
+                            BorderBrush="Black"
+                            FontSize="20" 
+                            Width="81" 
+                            Margin="283,137,0,-95" 
+                            VerticalAlignment="Center"  
+                            HorizontalContentAlignment="Right" 
+                            HorizontalAlignment="Left" 
+                            Height="258"  
+                            Canvas.ZIndex="1000" 
+                            SelectionChanged="LPLoanDiscount_SelectionChanged" >
+            <toolkit:ListPicker.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <TextBlock TextAlignment="Left" Tag="{Binding Discount}" Text="{Binding DiscountName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </toolkit:ListPicker.ItemTemplate>
+
+            <toolkit:ListPicker.FullModeItemTemplate>
+                <DataTemplate>
+                    <TextBlock TextAlignment="Left" Tag="{Binding Discount}" Text="{Binding DiscountName}" Margin="16 0 0 0" FontSize="43"/>
+                </DataTemplate>
+            </toolkit:ListPicker.FullModeItemTemplate>
+        </toolkit:ListPicker>
+        <TextBlock Text="=" FontSize="20"  Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="368,157,0,116"  Width="15" />
+        <TextBox x:Name="txtLoanRate" BorderBrush="Black" FontSize="20" Height="70" Foreground="#2B4C66" Margin="371,136,10,94" TextAlignment="Right"  InputScope="Number" />
+        <TextBlock Text="%" FontSize="20"  Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="436,156,0,117"  Width="22" />
+
+
+
+
+
+
+
+    </Grid>
+</UserControl>

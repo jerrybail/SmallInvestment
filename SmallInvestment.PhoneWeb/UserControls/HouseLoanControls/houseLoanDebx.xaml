@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="SmallInvestment.PhoneWeb.UserControls.HouseLoanControls.houseLoanDebx"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource TransparentBrush}">
+        <!--等额本息-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"  />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35"  />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="tBlockDebx" Foreground="Black" Text="" HorizontalAlignment="Left" Grid.Row="2" FontWeight="Bold" Margin="10,0,0,0"  />
+
+        <TextBlock x:Name="txtHouseLoanInterest" Foreground="Black" Text="支付利息：" HorizontalAlignment="Left" Width="446" Margin="10,0,0,0" />
+        <TextBlock x:Name="txtHousePayBankAmount" Foreground="Black" Text="还款总额：" HorizontalAlignment="Left" Width="446" Grid.Row="1" Margin="10,0,0,0" />
+        <Border Height="50" Background="#42AAFF"  VerticalAlignment="Center"  Margin="0,0,0,30" Grid.Row="3" Grid.RowSpan="2">
+            <StackPanel VerticalAlignment="Center"  Orientation="Horizontal">
+                <TextBlock Text="期次" Foreground="White"  TextAlignment="Center" Width="80"  FontSize="20" />
+                <TextBlock Text="偿还本金" Foreground="White" TextAlignment="Right" Width="100"  FontSize="20"/>
+                <TextBlock Text="偿还利息" Foreground="White" TextAlignment="Right" Width="120"  FontSize="20"/>
+                <TextBlock Text="偿还本息" Foreground="White" TextAlignment="Right" Width="120"  FontSize="20"/>
+            </StackPanel>
+        </Border>
+
+        <toolkit:LongListMultiSelector x:Name="selDebx"
+                                       LayoutMode="List"
+                                       Background="Transparent" 
+                                       Height="460"
+                                       VerticalAlignment="Top" 
+                                       ItemsSource="{Binding}"       
+                                       Grid.Row="4"
+                                       Margin="0,10,0,-85" Grid.RowSpan="11">
+            <toolkit:LongListMultiSelector.ItemTemplate>
+                <DataTemplate>
+                    <Border Height="50" Margin="0 0 0 0" BorderBrush="#DCE3E4" BorderThickness="0 0 0 1">
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                            <TextBlock Foreground="Black" Text="{Binding MonthTime }" Width="80"   FontSize="20" />
+                            <TextBlock Foreground="Black" Text="{Binding MonthPayBjStr}" TextAlignment="Left" Width="120"    FontSize="20"/>
+                            <TextBlock Foreground="Black" Text="{Binding MonthPayLxStr}" TextAlignment="Left" Width="120"  FontSize="20"/>
+                            <TextBlock Foreground="Black" Text="{Binding MonthPayYgStr}" TextAlignment="Left" Width="120"  FontSize="20"/>
+                        </StackPanel>
+                    </Border>
+
+                </DataTemplate>
+
+            </toolkit:LongListMultiSelector.ItemTemplate>
+
+        </toolkit:LongListMultiSelector>
+
+
+
+    </Grid>
+</UserControl>
